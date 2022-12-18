@@ -1,0 +1,52 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+
+import 'package:flutter/material.dart';
+import 'package:flutter_application_1/transaction.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyHomePage extends StatelessWidget {
+  //const MyHomePage({super.key});
+
+  final List<Transaction> transaction = [
+    Transaction(
+        id: 't1', title: 'New Shoes', amount: 69.99, date: DateTime.now()),
+    Transaction(title: 'Clothes', amount: 70.99, date: DateTime.now(), id: 't2')
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text('New App'),
+      ),
+      body: Column(children: <Widget>[
+        Card(
+            color: Colors.blue,
+            elevation: 5,
+            child: Container(child: Text('CHART'), width: double.infinity)),
+        Card(
+          child: Text('Add Transaction'),
+          elevation: 5,
+        ),
+        Column(
+          children: [],
+        )
+      ]),
+    ));
+  }
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: MyHomePage(),
+    );
+  }
+}
