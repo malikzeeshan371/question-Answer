@@ -1,0 +1,139 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, use_key_in_widget_constructors
+
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatefulWidget {
+  //const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('REGISTRATION FORM'),
+            ),
+            body: Forms()));
+  }
+}
+
+class Forms extends StatefulWidget {
+  const Forms({super.key});
+
+  @override
+  State<Forms> createState() => _FormsState();
+}
+
+class _FormsState extends State<Forms> {
+  final keys = GlobalKey<FormState>();
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+        key: keys,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          // ignore: prefer_const_constructors
+          children: [
+            // ignore: prefer_const_constructors
+            TextFormField(
+              // validator: (value) {
+              //   if (value == null || value.isEmpty) {
+              //     return 'please enter some text';
+              //   }
+
+              //   return null;
+              // },
+              // ignore: prefer_const_constructors
+              decoration: const InputDecoration(
+                  hintText: 'Enter Your name',
+                  labelText: 'Name',
+                  icon: Icon(Icons.person)),
+            ),
+
+            TextFormField(
+              // validator: (value) {
+              //   if (value == null || value.isEmpty) {
+              //     return 'please enter some text';
+              //   }
+
+              //   return null;
+              // },
+              decoration: const InputDecoration(
+                  hintText: 'Enter Your Address',
+                  labelText: 'Address',
+                  icon: Icon(Icons.mail)),
+            ),
+
+            TextFormField(
+              // validator: (value) {
+              //   if (value == null || value.isEmpty) {
+              //     return 'please enter some text';
+              //   }
+
+              //   return null;
+              // },
+              decoration: const InputDecoration(
+                  hintText: 'Enter Your mobile no.',
+                  labelText: 'Mobile No.',
+                  icon: Icon(Icons.ad_units)),
+            ),
+            Container(
+                margin: EdgeInsets.all(20),
+                child: ElevatedButton(
+                    child: Text('Registration Button'),
+
+                    // style: ElevatedButton.styleFrom(
+                    //     ),
+                    onPressed: () {
+                      if (keys.currentState!.validate()) {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => SecondRoute()));
+                      }
+                    }))
+          ],
+        ));
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  //const SecondRoute({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(title: Text('Const Route')),
+      body: Column(children: [
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(),
+          onPressed: () {
+            Navigator.popUntil(context, ModalRoute.withName('/'));
+          },
+          child: Text(
+            'GO BACK',
+          ),
+        ),
+        Row(
+          children: [
+            Container(
+              child: Image.asset(
+                'assets/1.jpg',
+                fit: BoxFit.fill,
+              ),
+            )
+          ],
+        )
+      ]),
+    ));
+  }
+}
