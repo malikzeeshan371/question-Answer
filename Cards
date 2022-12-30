@@ -1,0 +1,501 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  //const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(title: Text('Card Display')),
+      body: Row(children: [
+        Container(
+          height: 500,
+          width: 350,
+          padding: EdgeInsets.all(30),
+          child: Card(
+            color: Colors.red,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            child: Column(children: [
+              Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Image.asset(
+                    'images/laptop.png',
+                    height: 100,
+                    width: 100,
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 10, top: 25),
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.school,
+                        size: 50,
+                      ),
+                      title: Text(
+                        'Malik Zeeshan',
+                        style: TextStyle(
+                            fontSize: 30, fontStyle: FontStyle.italic),
+                      ))),
+            ]),
+          ),
+        ),
+        
+
+        Row(
+          children: [
+            Container(
+              height: 200,
+              width: 350,
+              padding: EdgeInsets.all(10),
+              child: Card(
+                color: Colors.red,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30)),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Image.asset(
+                        'images/laptop.png',
+                        height: 100,
+                        width: 100,
+                      )),
+                  Padding(
+                      padding: EdgeInsets.only(left: 10, top: 25),
+                      child: ListTile(
+                          leading: Icon(
+                            Icons.school,
+                            size: 50,
+                          ),
+                          title: Text(
+                            'Malik Zeeshan Hassan',
+                            style: TextStyle(
+                                fontSize: 30, fontStyle: FontStyle.italic),
+                          ))),
+                ]),
+              ),
+            ),
+            Container(
+              height: 360,
+              width: 350,
+            )
+          ],
+        )
+        // Container(
+        //     child: Padding(
+        //   padding: EdgeInsets.all(10),
+        //   child: Card(
+        //     color: Colors.red,
+        //     shape:
+        //         RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        //     child: Column(mainAxisSize: MainAxisSize.max, children: [
+        //       Padding(
+        //           padding: EdgeInsets.all(5),
+        //           child: Image.asset(
+        //             'images/laptop.png',
+        //             height: 100,
+        //             width: 100,
+        //           )),
+        //     ]),
+        //   ),
+        // )),
+      ]),
+    ));
+  }
+}
+
+ 
+      //   child: Center(
+      //     child: Container(
+      //       height: 400,
+      //       width: 500,
+      //       //color: Colors.green,
+      //       child: Card(
+      //         color: Colors.red,
+      //         shape: RoundedRectangleBorder(
+      //             borderRadius: BorderRadius.circular(30)),
+      //         child: Column(
+      //           mainAxisSize: MainAxisSize.max,
+      //           children: [
+      //             Padding(
+      //                 padding: EdgeInsets.all(5),
+      //                 child: Image.asset(
+      //                   'images/laptop.png',
+      //                   height: 100,
+      //                   width: 100,
+      //                 )),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 10),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.person,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'Malik Zeeshan',
+      //                     style: TextStyle(
+      //                         fontSize: 40, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 25),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.school,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'BS Poli Sci and Eco.',
+      //                     style: TextStyle(
+      //                         fontSize: 30, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+//     )));
+//   }
+// }
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  //const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(title: Text('Card Display')),
+      body: Row(children: [
+        Container(
+          height: 500,
+          width: 350,
+          padding: EdgeInsets.all(30),
+          child: Card(
+            color: Colors.red,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            child: Column(children: [
+              Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Image.asset(
+                    'images/laptop.png',
+                    height: 100,
+                    width: 100,
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 10, top: 25),
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.school,
+                        size: 50,
+                      ),
+                      title: Text(
+                        'Malik Zeeshan',
+                        style: TextStyle(
+                            fontSize: 30, fontStyle: FontStyle.italic),
+                      ))),
+            ]),
+          ),
+        ),
+        
+
+        Row(
+          children: [
+            Container(
+              height: 200,
+              width: 350,
+              padding: EdgeInsets.all(10),
+              child: Card(
+                color: Colors.red,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30)),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Image.asset(
+                        'images/laptop.png',
+                        height: 100,
+                        width: 100,
+                      )),
+                  Padding(
+                      padding: EdgeInsets.only(left: 10, top: 25),
+                      child: ListTile(
+                          leading: Icon(
+                            Icons.school,
+                            size: 50,
+                          ),
+                          title: Text(
+                            'Malik Zeeshan Hassan',
+                            style: TextStyle(
+                                fontSize: 30, fontStyle: FontStyle.italic),
+                          ))),
+                ]),
+              ),
+            ),
+            Container(
+              height: 360,
+              width: 350,
+            )
+          ],
+        )
+        // Container(
+        //     child: Padding(
+        //   padding: EdgeInsets.all(10),
+        //   child: Card(
+        //     color: Colors.red,
+        //     shape:
+        //         RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        //     child: Column(mainAxisSize: MainAxisSize.max, children: [
+        //       Padding(
+        //           padding: EdgeInsets.all(5),
+        //           child: Image.asset(
+        //             'images/laptop.png',
+        //             height: 100,
+        //             width: 100,
+        //           )),
+        //     ]),
+        //   ),
+        // )),
+      ]),
+    ));
+  }
+}
+
+ 
+      //   child: Center(
+      //     child: Container(
+      //       height: 400,
+      //       width: 500,
+      //       //color: Colors.green,
+      //       child: Card(
+      //         color: Colors.red,
+      //         shape: RoundedRectangleBorder(
+      //             borderRadius: BorderRadius.circular(30)),
+      //         child: Column(
+      //           mainAxisSize: MainAxisSize.max,
+      //           children: [
+      //             Padding(
+      //                 padding: EdgeInsets.all(5),
+      //                 child: Image.asset(
+      //                   'images/laptop.png',
+      //                   height: 100,
+      //                   width: 100,
+      //                 )),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 10),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.person,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'Malik Zeeshan',
+      //                     style: TextStyle(
+      //                         fontSize: 40, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 25),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.school,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'BS Poli Sci and Eco.',
+      //                     style: TextStyle(
+      //                         fontSize: 30, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+//     )));
+//   }
+// }
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  //const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(title: Text('Card Display')),
+      body: Row(children: [
+        Container(
+          height: 500,
+          width: 350,
+          padding: EdgeInsets.all(30),
+          child: Card(
+            color: Colors.red,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            child: Column(children: [
+              Padding(
+                  padding: EdgeInsets.all(5),
+                  child: Image.asset(
+                    'images/laptop.png',
+                    height: 100,
+                    width: 100,
+                  )),
+              Padding(
+                  padding: EdgeInsets.only(left: 10, top: 25),
+                  child: ListTile(
+                      leading: Icon(
+                        Icons.school,
+                        size: 50,
+                      ),
+                      title: Text(
+                        'Malik Zeeshan',
+                        style: TextStyle(
+                            fontSize: 30, fontStyle: FontStyle.italic),
+                      ))),
+            ]),
+          ),
+        ),
+        
+
+        Row(
+          children: [
+            Container(
+              height: 200,
+              width: 350,
+              padding: EdgeInsets.all(10),
+              child: Card(
+                color: Colors.red,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30)),
+                child: Column(mainAxisSize: MainAxisSize.min, children: [
+                  Padding(
+                      padding: EdgeInsets.all(5),
+                      child: Image.asset(
+                        'images/laptop.png',
+                        height: 100,
+                        width: 100,
+                      )),
+                  Padding(
+                      padding: EdgeInsets.only(left: 10, top: 25),
+                      child: ListTile(
+                          leading: Icon(
+                            Icons.school,
+                            size: 50,
+                          ),
+                          title: Text(
+                            'Malik Zeeshan Hassan',
+                            style: TextStyle(
+                                fontSize: 30, fontStyle: FontStyle.italic),
+                          ))),
+                ]),
+              ),
+            ),
+            Container(
+              height: 360,
+              width: 350,
+            )
+          ],
+        )
+        // Container(
+        //     child: Padding(
+        //   padding: EdgeInsets.all(10),
+        //   child: Card(
+        //     color: Colors.red,
+        //     shape:
+        //         RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+        //     child: Column(mainAxisSize: MainAxisSize.max, children: [
+        //       Padding(
+        //           padding: EdgeInsets.all(5),
+        //           child: Image.asset(
+        //             'images/laptop.png',
+        //             height: 100,
+        //             width: 100,
+        //           )),
+        //     ]),
+        //   ),
+        // )),
+      ]),
+    ));
+  }
+}
+
+ 
+      //   child: Center(
+      //     child: Container(
+      //       height: 400,
+      //       width: 500,
+      //       //color: Colors.green,
+      //       child: Card(
+      //         color: Colors.red,
+      //         shape: RoundedRectangleBorder(
+      //             borderRadius: BorderRadius.circular(30)),
+      //         child: Column(
+      //           mainAxisSize: MainAxisSize.max,
+      //           children: [
+      //             Padding(
+      //                 padding: EdgeInsets.all(5),
+      //                 child: Image.asset(
+      //                   'images/laptop.png',
+      //                   height: 100,
+      //                   width: 100,
+      //                 )),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 10),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.person,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'Malik Zeeshan',
+      //                     style: TextStyle(
+      //                         fontSize: 40, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //             Padding(
+      //               padding: EdgeInsets.only(left: 10, top: 25),
+      //               child: ListTile(
+      //                   leading: Icon(
+      //                     Icons.school,
+      //                     size: 50,
+      //                   ),
+      //                   title: Text(
+      //                     'BS Poli Sci and Eco.',
+      //                     style: TextStyle(
+      //                         fontSize: 30, fontStyle: FontStyle.italic),
+      //                   )),
+      //             ),
+      //           ],
+      //         ),
+      //       ),
+      //     ),
+      //   ),
+      // ),
+//     )));
+//   }
+// }
